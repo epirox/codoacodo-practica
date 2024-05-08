@@ -1,0 +1,201 @@
+{
+    "0": {
+        "src": "src/bannerArt/anime_art_of_Banner_page_manga(0).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shounen"
+    },
+    "1": {
+        "src": "src/bannerArt/anime_art_of_Banner_page_manga(1).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shounen"
+
+    },
+    "2": {
+        "src": "src/bannerArt/anime_art_of_Banner_page_manga(2).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shounen"
+    },
+    "3": {
+        "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(0).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shoujo"
+    },
+    "4": {
+        "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(1).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shoujo"
+    },
+    "5": {
+        "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(2).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shoujo"
+    },
+    "6": {
+        "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(3).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shoujo"
+    },
+    "7": {
+        "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(4).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shoujo"
+    },
+    "8": {
+        "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(5).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Shoujo"
+    },
+    "9": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(0).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "10": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(1).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "11": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(2).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "12": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(3).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "13": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(4).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "14": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(5).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "15": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(6).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "16": {
+        "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(7).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "17": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(0).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Seinen"
+    },
+    "18": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(1).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Josei"
+    },
+    "19": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(2).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Josei"
+    },
+    "20": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(3).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Josei"
+    },
+    "21": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(4).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Josei"
+    },
+    "22": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(5).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Josei"
+    },
+    "23": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(6).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Josei"
+    },
+    "24": {
+        "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(7).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Josei"
+    },
+    "25": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(0).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    },
+    "26": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(1).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    },
+    "27": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(2).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    },
+    "28": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(3).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    },
+    "29": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(4).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    },
+    "30": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(5).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    },
+    "31": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(6).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    },
+    "32": {
+        "src": "src/topToFuture/manga_Top_future_art_by_atey_g(7).jpeg",
+        "title": "Lorem ipsum dolor sit amet, consectetur",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "gen": "Isekai"
+    }
+}

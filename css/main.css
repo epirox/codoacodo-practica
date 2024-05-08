@@ -132,6 +132,10 @@ nav .logo {
     font-size: 24px;
 }
 
+nav .logo img {
+    max-width: 2em;
+}
+
 nav .menu-toggle {
     display: none;
     flex-direction: column;
@@ -151,10 +155,11 @@ nav .menu {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 nav .menu li {
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 nav .menu a {
@@ -163,6 +168,9 @@ nav .menu a {
 }
 
 @media (max-width: 768px) {
+    header {
+        display: none;
+    }
 
     /* Media query para dispositivos móviles */
     nav .menu-toggle {
@@ -177,6 +185,7 @@ nav .menu a {
         top: 50px;
         left: 0;
         width: 100%;
+        z-index: 2;
     }
 
     nav .menu.active {
@@ -185,8 +194,9 @@ nav .menu a {
 }
 
 main .container {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 main .column {
@@ -225,4 +235,70 @@ main .button:hover {
     main .container {
         flex-direction: column;
     }
+}
+
+.biblioteca {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: calc(100% / 1 - 20px);
+    margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .item {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (min-width: 768px) {
+    .item {
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .item {
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+.foto-contenedor {
+    position: relative;
+    border: 4px solid var(--papaya-whip);
+    overflow: hidden;
+    width: 20em;
+    height: 30em;
+}
+
+.texto-polarizado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1em;
+
+}
+
+.foto-contenedor:hover .texto-polarizado {
+    opacity: 1;
+}
+
+.imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+    object-fit: contain;
 }
