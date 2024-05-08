@@ -63,6 +63,7 @@ header p {
 }
 
 h2 {
+    margin-top: 2em;
     background-color: #003049ff;
     border-color: #669bbcff;
     border: 0.1em dashed #669bbcff;
@@ -83,12 +84,15 @@ form {
 
 /* Estilos para el nav bar */
 nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
     background-color: #003049ff;
     border-color: #669bbcff;
     border: 0.1em dashed #669bbcff;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    z-index: 1000; 
 }
 
 nav li {
