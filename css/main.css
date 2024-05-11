@@ -64,9 +64,9 @@ header p {
 
 h2 {
     margin-top: 2em;
-    background-color: #003049ff;
-    border-color: #669bbcff;
-    border: 0.1em dashed #669bbcff;
+    background-color: var(--prussian-blue);
+    border-color: var(--air-superiority-blue);
+    border: 0.1em dotted var(--air-superiority-blue);
 }
 
 .bungee-regular {
@@ -76,37 +76,45 @@ h2 {
 }
 
 form {
-    background-color: #003049ff;
-    border-color: #669bbcff;
-    border: 0.1em dashed #669bbcff;
-    color: #fdf0d5ff;
+    background-color: var(--prussian-blue);
+    border-color: var(--air-superiority-blue);
+    border: 0.1em dashed var(--air-superiority-blue);
+    color: var(--papaya-whip);
 }
 
 /* Estilos para el nav bar */
 nav {
-    position: sticky;
-    top: 0;
     width: 100%;
-    background-color: #003049ff;
-    border-color: #669bbcff;
-    border: 0.1em dashed #669bbcff;
+    background-color: var(--prussian-blue);
+    border-color: var(--air-superiority-blue);
+    border: 0.1em ridge var(--air-superiority-blue);
     display: flex;
     justify-content: center;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75);
+    overflow: auto;
+}
+
+.navbar.sticky-top {
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 
 nav li {
-    background-color: #003049ff;
-    border-color: #669bbcff;
-    border: 0.1em dashed #669bbcff;
+    background-color: var(--prussian-blue);
+    border-color: var(--air-superiority-blue);
+    border: 0.1em double var(--air-superiority-blue);
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75);
     margin: 0 10px;
+    padding: 1em;
 }
 
 nav a {
-    background-color: #003049ff;
-    border-color: #669bbcff;
-    border: 0.1em dashed #669bbcff;
-    color: #fdf0d5ff;
+    background-color: var(--prussian-blue);
+    border-color: var(--air-superiority-blue);
+    border: none;
+    color: var(--papaya-whip);
+    
     position: relative;
 }
 
