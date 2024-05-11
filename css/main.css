@@ -39,9 +39,14 @@ body {
     background-color: var(--barn-red);
     color: var(--papaya-whip);
     border: 0.2em dotted var(--fire-brick);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
+    width: 100%;
     height: 10em;
     background-image: url('../src/bannerArt/anime_art_of_Banner_page_manga(1).jpeg');
     background-repeat: no-repeat;
@@ -84,41 +89,65 @@ form {
 
 /* Estilos para el nav bar */
 nav {
-    width: 100%;
     background-color: var(--prussian-blue);
     border-color: var(--air-superiority-blue);
     border: 0.1em ridge var(--air-superiority-blue);
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75);
+
+    width: 100%;
+    top: 0;
+
+    display: block;
+    overflow: auto;
+    position: sticky;
+
     display: flex;
     justify-content: center;
-    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75);
-    overflow: auto;
-}
 
-.navbar.sticky-top {
-    position: sticky;
-    top: 0;
     z-index: 1000;
 }
 
-nav li {
+nav .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .logo {
+    padding: 0;
+    margin: 1em 0.5em 1em 0em;
+    display: flex;
+}
+
+nav .container .logo img {
+    max-width: 4em;
+}
+
+nav .container .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .container .menu li {
     background-color: var(--prussian-blue);
     border-color: var(--air-superiority-blue);
     border: 0.1em double var(--air-superiority-blue);
     box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.75);
-    margin: 0 10px;
-    padding: 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 0.5em 1em 0em;
 }
 
-nav a {
-    background-color: var(--prussian-blue);
-    border-color: var(--air-superiority-blue);
-    border: none;
+nav .container .menu li a {
     color: var(--papaya-whip);
-    
-    position: relative;
+    text-decoration: none;
 }
 
-nav a:hover::after {
+nav .container .menu li a:hover::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -128,55 +157,21 @@ nav a:hover::after {
     background-color: black;
 }
 
-nav .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+nav .container .menu-toggle,
+nav .container .menu {
+    margin-right: 10px;
 }
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo {
-    font-size: 24px;
-}
-
-nav .logo img {
-    max-width: 2em;
-}
-
-nav .menu-toggle {
+nav .container .menu-toggle {
     display: none;
-    flex-direction: column;
-    cursor: pointer;
 }
 
-nav .bar {
+nav .container .menu-toggle .bar {
     content: '-';
     width: 25px;
     height: 3px;
     background-color: #fff;
     margin: 3px 0;
-}
-
-nav .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav .menu li {
-    margin-right: 1em;
-}
-
-nav .menu a {
-    color: #fff;
-    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -185,11 +180,18 @@ nav .menu a {
     }
 
     /* Media query para dispositivos móviles */
-    nav .menu-toggle {
-        display: flex;
+    nav {
+        height: 60px;
+        overflow: visible;
     }
 
-    nav .menu {
+    nav .container .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    nav .container .menu {
         display: none;
         flex-direction: column;
         background-color: #333;
@@ -197,18 +199,73 @@ nav .menu a {
         top: 50px;
         left: 0;
         width: 100%;
-        z-index: 2;
+        z-index: 1002;
+        overflow: visible;
     }
 
-    nav .menu.active {
+    nav .container .menu.active {
         display: flex;
     }
 }
 
-main .container {
+/* Carousel */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 33%;
+    height: auto;
     display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+
+/* MAIN CONTAINER */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20em;
+    width: 100%;
+}
+
+main .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
 main .column {
@@ -217,8 +274,8 @@ main .column {
 }
 
 main h1,
-h2,
-h3 {
+main h2,
+main h3 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
 }
@@ -246,7 +303,12 @@ main .button:hover {
 @media (max-width: 768px) {
     main .container {
         flex-direction: column;
+        align-items: center;
     }
+}
+
+section {
+    width: 100%;
 }
 
 .biblioteca {
