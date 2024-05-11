@@ -92,7 +92,7 @@ nav {
     border: 0.1em dashed #669bbcff;
     display: flex;
     justify-content: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 nav li {
@@ -245,11 +245,18 @@ main .button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .item {
     width: calc(100% / 1 - 20px);
     margin: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mostrar {
+    opacity: 1;
 }
 
 @media (min-width: 576px) {
@@ -305,4 +312,72 @@ main .button:hover {
     width: auto;
     height: 100%;
     object-fit: contain;
+}
+
+#contacto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.form-group {
+    grid-column: span 1;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.btn-submit {
+    grid-column: span 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+    .contact-form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr 1fr;
+    }
 }

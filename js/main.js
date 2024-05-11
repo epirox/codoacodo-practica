@@ -44,4 +44,30 @@ window.onload = function () {
             console.error('Error al cargar el archivo JSON:', error);
         });
 
+        
+
+        const isInViewport = function(element) {           
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        const showItems = function () {
+            const items = document.querySelectorAll('.item');
+            items.forEach(item => {
+                if (isInViewport(item)) {
+                item.classList.add('mostrar');
+                } else {
+                item.classList.remove('mostrar');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', showItems);
+
+
 };

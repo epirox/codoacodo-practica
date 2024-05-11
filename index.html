@@ -102,43 +102,43 @@
       <h2>Talleres Abiertos</h2>
       <p>Aprende manga</p>
     </section>
-    <section id="contacto" class="container">
+    <section id="contacto">
       <h2>Contacto</h2>
-      <form action="#contacto" class="row">
+      <form action="#contacto" class="contact-form">
     
-        <div class="col-md-6">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" name="nombre" id="nombre" class="form-control">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" class="form-control" required>
         </div>
     
-        <div class="col-md-6">
-          <label for="tema" class="form-label">Tema</label>
-          <input type="text" name="tema" id="tema" class="form-control">
+        <div class="form-group">
+          <label for="tema">Tema</label>
+          <input type="text" name="tema" id="tema" class="form-control" required>
         </div>
     
-        <div class="col-12">
-          <label for="consulta" class="form-label">Consulta</label>
-          <textarea name="consulta" id="consulta" class="form-control" rows="5"></textarea>
+        <div class="form-group">
+          <label for="consulta">Consulta</label>
+          <textarea name="consulta" id="consulta" class="form-control" rows="5" required></textarea>
         </div>
     
-        <div class="col-12">
+        <div class="form-group">
           <div class="form-check">
-            <input type="checkbox" name="tyc" id="tyc" class="form-check-input">
+            <input type="checkbox" name="tyc" id="tyc" class="form-check-input" required>
             <label for="tyc" class="form-check-label">Acepta los términos y condiciones</label>
           </div>
         </div>
     
-        <div class="col-12">
-          <label for="adjunto" class="form-label">Adjuntar</label>
+        <div class="form-group">
+          <label for="adjunto">Adjuntar</label>
           <input type="file" name="adjunto" id="adjunto" class="form-control">
         </div>
     
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-        </div>
+        <button type="submit" class="btn-submit">Enviar</button>
     
       </form>
     </section>
+
+    
     
   </div>
 </main>
