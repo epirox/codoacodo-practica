@@ -1,21 +1,118 @@
-let currentIndex = 0;
+let currentIndex = 1;
+const moveBy = 1;
+const carouselInner = document.querySelector('.carousel-inner');
+
+const disabledControlCaousel = function () {
+    carousel - control - prev
+}
+const startCarousel = function () {
+    const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item');
+    carouselItems[0].classList.add('active')
+    carouselItems[1].classList.add('active')
+    carouselItems[2].classList.add('active')
+}
+
+const fadeIn = function (item, appened = false) {
+    if(appened){
+        carouselInner.appendChild(item);
+    }
+    item.classList.add('active')
+    item.classList.add('fadeIn')
+    item.addEventListener('animationend', function () {
+        item.classList.remove('fadeIn')        
+    });
+}
+
+const fadeOut = function (item, remove = false) {
+    item.classList.add('fadeOut');
+    item.addEventListener('animationend', function () {
+        item.classList.remove('fadeOut')
+        item.classList.remove('active')
+        if (remove) {
+            console.log("l")
+            item.remove()
+        }
+        const prevButtons = document.querySelectorAll('.btn');
+
+        prevButtons.forEach(button => {
+            button.disabled = false;
+        });
+
+    });
+}
+
 
 const moveCarousel = function (direction) {
-    console.log(currentIndex)
-    const carouselInner = document.querySelector('.carousel-inner');
-    const carouselItems = document.querySelectorAll('.carousel-item');
+    const prevButtons = document.querySelectorAll('.btn');
 
-    const carouselWidth = carouselItems[0].offsetWidth;
-    const maxIndex = carouselItems.length - 1;
+    prevButtons.forEach(button => {
+        button.disabled = true;
+    });
 
-    if (direction === -1 && currentIndex > 0) {
-        currentIndex--;
-    } else if (direction === 1 && currentIndex < maxIndex) {
-        currentIndex++;
+    const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item');
+    const carouselWidth = carouselItems[currentIndex].offsetWidth;
+
+    if (direction === 1) {
+
+        if ((currentIndex + 1) < carouselItems.length - 1) {
+            
+            const leftCurrentIndex = currentIndex - 1
+            const leaveCurrentItem = carouselItems[leftCurrentIndex]
+            fadeOut(leaveCurrentItem)
+
+            const rightCurrentIndex = currentIndex + 2
+            const appearCurrentItem = carouselItems[rightCurrentIndex]
+            fadeIn(appearCurrentItem)
+
+
+            currentIndex++
+            console.log(leftCurrentIndex, currentIndex, rightCurrentIndex)
+
+
+        } else {
+            const firstClone = carouselItems[0].cloneNode(true);
+
+            fadeIn(firstClone,true)
+
+            const leaveCurrentItem = carouselItems[currentIndex - 1]
+            fadeOut(leaveCurrentItem)
+
+            const elementToRemove = carouselItems[0];
+            elementToRemove.remove()
+
+        }
+    } else if (direction === -1) {
+
+        if ((currentIndex - 1) > 0) {
+            
+            const leftCurrentIndex = currentIndex - 1
+            const appearCurrentItem = carouselItems[leftCurrentIndex]
+            fadeIn(appearCurrentItem)
+
+            const rightCurrentIndex = currentIndex + 2
+            const leaveCurrentItem = carouselItems[rightCurrentIndex]
+            fadeOut(leaveCurrentItem)
+
+            currentIndex--
+            console.log(leftCurrentIndex, currentIndex, rightCurrentIndex)
+
+
+
+        } else {
+            const firstClone = carouselItems[carouselItems.length - 1].cloneNode(true);
+
+            fadeIn(firstClone,true)
+
+            const leaveCurrentItem = carouselItems[currentIndex + 1]
+            fadeOut(leaveCurrentItem)
+
+            const elementToRemove = carouselItems[carouselItems.length - 1];
+            elementToRemove.remove()
+        }
+
     }
 
-    const newPosition = -currentIndex * carouselWidth;
-    carouselInner.style.transform = `translateX(${newPosition}px)`;
+
 }
 
 const loadBibliotecaImgenes = function () {
@@ -94,20 +191,21 @@ const loadEventMenuToggle = function () {
     });
 }
 
-const loadEventCarousel = function(){
+const loadEventCarousel = function () {
+    startCarousel()
     document.getElementById('b-prev')
-    .addEventListener('click', function () {
-        moveCarousel(-1)
-    });
+        .addEventListener('click', function () {
+            moveCarousel(-1)
+        });
     document.getElementById('b-next')
-    .addEventListener('click', function () {
-        moveCarousel(1)
-    });
+        .addEventListener('click', function () {
+            moveCarousel(1)
+        });
 }
 
 
 window.onload = function () {
-    
+
     loadEventMenuToggle()
     loadBibliotecaImgenes()
     loadEventScroll()

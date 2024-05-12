@@ -1,5 +1,6 @@
 /* Variables y estilos globales */
 :root {
+    --time-duration: 5s;
     --barn-red: hsla(0, 100%, 24%, 1);
     --fire-brick: hsla(356, 83%, 41%, 1);
     --papaya-whip: hsla(40, 91%, 91%, 1);
@@ -213,16 +214,39 @@ nav .container .menu-toggle .bar {
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
+    height: 15em;
+    overflow: hidden;
 }
 
 .carousel-item {
-    min-width: 100%;
+    position: relative;
+    display: none;
+    width: 33%;
+    height: 100%;
+
+}
+
+.carousel-item.active {
+    display: inline;
+}
+
+.carousel-item span {
+    position: absolute;
+    top: 1em;
+    left: 3em;
+    z-index: 1000;
+    color: white;
+    font-weight: bold;
 }
 
 .carousel-item img {
-    width: 33%;
-    height: auto;
-    display: block;
+    position: relative;
+    width: 95%;
+    border-radius: 2em;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
 }
 
 .carousel-control-prev,
@@ -242,6 +266,56 @@ nav .container .menu-toggle .bar {
 
 .carousel-control-next {
     right: 10px;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: var(--time-duration);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        width: 0%;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: var(--time-duration);
+}
+
+
+@keyframes nextToRight {
+    from {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nextToRight {
+    animation-name: nextToRight;
+    animation-duration: 0.5s;
 }
 
 
@@ -463,7 +537,7 @@ footer {
 .superborde {
     border-color: var(--air-superiority-blue);
     border-top: 1em solid var(--air-superiority-blue);
-    border-width: 1em;    
+    border-width: 1em;
     border-right: none;
     border-bottom: none;
     border-left: none;
