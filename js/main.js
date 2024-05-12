@@ -3,7 +3,18 @@ const moveBy = 1;
 const carouselInner = document.querySelector('.carousel-inner');
 
 const disabledControlCaousel = function () {
-    carousel - control - prev
+    const prevButtons = document.querySelectorAll('.btn');
+
+    prevButtons.forEach(button => {
+        button.disabled = true;
+    })
+}
+const enabledControlCaousel = function () {
+    const prevButtons = document.querySelectorAll('.btn');
+
+    prevButtons.forEach(button => {
+        button.disabled = false;
+    })
 }
 const startCarousel = function () {
     const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item');
@@ -12,105 +23,92 @@ const startCarousel = function () {
     carouselItems[2].classList.add('active')
 }
 
-const fadeIn = function (item, appened = false) {
-    if(appened){
-        carouselInner.appendChild(item);
+const moveItemStartToEnd = function (currentIndex, direction, carouselItems) {
+    const endIndexCarouselItems = carouselItems.length - 1
+    const isEndCarouselItems = (currentIndex + direction) >= endIndexCarouselItems
+
+    console.log(isEndCarouselItems)
+
+    if (isEndCarouselItems) {
+        const firstItemIndex = 0
+        const firstClone = carouselItems[firstItemIndex].cloneNode(true);
+
+        carouselItems.appendChild(firstClone)
+
+        const elementToRemove = carouselItems[firstItemIndex];
+        elementToRemove.remove()
     }
+    return isEndCarouselItems
+}
+
+const moveItemEndToStart = function (currentIndex, direction, carouselItems) {
+    const startIndexCarouselItems = 1
+    const isBeginCarouselItems = (currentIndex + direction) < startIndexCarouselItems
+    console.log(isBeginCarouselItems)
+    if (isBeginCarouselItems) {
+        const lastItemIndex = carouselItems.length - 1
+        const lastClone = carouselItems[lastItemIndex].cloneNode(true);
+
+        carouselInner.insertAdjacentElement('afterbegin', lastClone);
+
+        const elementToRemove = carouselItems[lastItemIndex]
+        elementToRemove.remove()
+    }
+    return isBeginCarouselItems
+}
+
+const fadeIn = function (item, appened = false) {
     item.classList.add('active')
     item.classList.add('fadeIn')
     item.addEventListener('animationend', function () {
-        item.classList.remove('fadeIn')        
+        item.classList.remove('fadeIn')
     });
 }
 
-const fadeOut = function (item, remove = false) {
+const fadeOut = function (item, prepend = false) {
     item.classList.add('fadeOut');
     item.addEventListener('animationend', function () {
         item.classList.remove('fadeOut')
         item.classList.remove('active')
-        if (remove) {
-            console.log("l")
-            item.remove()
-        }
-        const prevButtons = document.querySelectorAll('.btn');
-
-        prevButtons.forEach(button => {
-            button.disabled = false;
-        });
-
-    });
+    })
 }
 
 
+
 const moveCarousel = function (direction) {
-    const prevButtons = document.querySelectorAll('.btn');
+    const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item')
 
-    prevButtons.forEach(button => {
-        button.disabled = true;
-    });
+    const isEnd = moveItemStartToEnd(currentIndex, direction, carouselItems)
+    const isStart = moveItemEndToStart(currentIndex, direction, carouselItems)
 
-    const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item');
-    const carouselWidth = carouselItems[currentIndex].offsetWidth;
-
-    if (direction === 1) {
-
-        if ((currentIndex + 1) < carouselItems.length - 1) {
-            
-            const leftCurrentIndex = currentIndex - 1
-            const leaveCurrentItem = carouselItems[leftCurrentIndex]
-            fadeOut(leaveCurrentItem)
-
-            const rightCurrentIndex = currentIndex + 2
-            const appearCurrentItem = carouselItems[rightCurrentIndex]
-            fadeIn(appearCurrentItem)
+    const carouselItemsActive = document.querySelectorAll('.carousel-inner .carousel-item.active');
+    const centerIndexCarouselItemsActive = 1
+    const currentIndexToLeave = centerIndexCarouselItemsActive - direction
+    const leaveCurrentItem = carouselItemsActive[currentIndexToLeave]
+    fadeOut(leaveCurrentItem)
 
 
-            currentIndex++
-            console.log(leftCurrentIndex, currentIndex, rightCurrentIndex)
-
-
-        } else {
-            const firstClone = carouselItems[0].cloneNode(true);
-
-            fadeIn(firstClone,true)
-
-            const leaveCurrentItem = carouselItems[currentIndex - 1]
-            fadeOut(leaveCurrentItem)
-
-            const elementToRemove = carouselItems[0];
-            elementToRemove.remove()
-
-        }
-    } else if (direction === -1) {
-
-        if ((currentIndex - 1) > 0) {
-            
-            const leftCurrentIndex = currentIndex - 1
-            const appearCurrentItem = carouselItems[leftCurrentIndex]
-            fadeIn(appearCurrentItem)
-
-            const rightCurrentIndex = currentIndex + 2
-            const leaveCurrentItem = carouselItems[rightCurrentIndex]
-            fadeOut(leaveCurrentItem)
-
-            currentIndex--
-            console.log(leftCurrentIndex, currentIndex, rightCurrentIndex)
-
-
-
-        } else {
-            const firstClone = carouselItems[carouselItems.length - 1].cloneNode(true);
-
-            fadeIn(firstClone,true)
-
-            const leaveCurrentItem = carouselItems[currentIndex + 1]
-            fadeOut(leaveCurrentItem)
-
-            const elementToRemove = carouselItems[carouselItems.length - 1];
-            elementToRemove.remove()
-        }
-
+    for (const item of carouselItems) {
+        console.log(item)
     }
+
+    let currentIndexToAdd = currentIndex
+    if (isEnd) {
+        currentIndexToAdd += 2
+
+    } else if (isStart) {
+
+        currentIndexToAdd = 0
+
+    } else {
+        currentIndexToAdd += 2 * direction
+        currentIndex += direction
+    }
+    console.log(direction, currentIndex, currentIndexToAdd)
+    const appearCurrentItem = carouselItems[currentIndexToAdd]
+    console.log = appearCurrentItem
+    fadeIn(appearCurrentItem)
+
 
 
 }
