@@ -1,7 +1,5 @@
-let currentIndex = 1;
-const moveBy = 1;
+const currentIndex = 3;
 const carouselInner = document.querySelector('.carousel-inner');
-
 const disabledControlCaousel = function () {
     const prevButtons = document.querySelectorAll('.btn');
 
@@ -18,46 +16,33 @@ const enabledControlCaousel = function () {
 }
 const startCarousel = function () {
     const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item');
-    carouselItems[0].classList.add('active')
-    carouselItems[1].classList.add('active')
-    carouselItems[2].classList.add('active')
+    carouselItems[currentIndex - 1].classList.add('active')
+    carouselItems[currentIndex ].classList.add('active')
+    carouselItems[currentIndex + 1].classList.add('active')
 }
 
-const moveItemStartToEnd = function (currentIndex, direction, carouselItems) {
-    const endIndexCarouselItems = carouselItems.length - 1
-    const isEndCarouselItems = (currentIndex + direction) >= endIndexCarouselItems
+const moveItemStartToEnd = function () {
+    const carouselItems = loadItemsOfCarousel()
+    const firstItem = carouselItems[0]
+    const firstClone = firstItem.cloneNode(true)
+    firstClone.classList.remove('active')
+    carouselInner.appendChild(firstClone)
+    firstItem.remove()
 
-    console.log(isEndCarouselItems)
-
-    if (isEndCarouselItems) {
-        const firstItemIndex = 0
-        const firstClone = carouselItems[firstItemIndex].cloneNode(true);
-
-        carouselItems.appendChild(firstClone)
-
-        const elementToRemove = carouselItems[firstItemIndex];
-        elementToRemove.remove()
-    }
-    return isEndCarouselItems
 }
 
-const moveItemEndToStart = function (currentIndex, direction, carouselItems) {
-    const startIndexCarouselItems = 1
-    const isBeginCarouselItems = (currentIndex + direction) < startIndexCarouselItems
-    console.log(isBeginCarouselItems)
-    if (isBeginCarouselItems) {
-        const lastItemIndex = carouselItems.length - 1
-        const lastClone = carouselItems[lastItemIndex].cloneNode(true);
-
-        carouselInner.insertAdjacentElement('afterbegin', lastClone);
-
-        const elementToRemove = carouselItems[lastItemIndex]
-        elementToRemove.remove()
-    }
-    return isBeginCarouselItems
+const moveItemEndToStart = function () {
+    const carouselItems = loadItemsOfCarousel()
+    const lastItemIndex = carouselItems.length - 1
+    const lastItem = carouselItems[lastItemIndex]
+    const lastClone = lastItem.cloneNode(true)
+    lastClone.classList.remove('active')
+    const firstItem = carouselItems[0];
+    firstItem.parentNode.insertBefore(lastClone, firstItem);
+    lastItem.remove()
 }
 
-const fadeIn = function (item, appened = false) {
+const fadeIn = function (item) {
     item.classList.add('active')
     item.classList.add('fadeIn')
     item.addEventListener('animationend', function () {
@@ -65,51 +50,52 @@ const fadeIn = function (item, appened = false) {
     });
 }
 
-const fadeOut = function (item, prepend = false) {
+const fadeOut = function (item) {
     item.classList.add('fadeOut');
     item.addEventListener('animationend', function () {
         item.classList.remove('fadeOut')
         item.classList.remove('active')
     })
 }
+const loadItemsOfCarousel = function () {
+    return document.querySelectorAll('.carousel-inner .carousel-item')
+}
 
-
-
-const moveCarousel = function (direction) {
-    const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item')
-
-    const isEnd = moveItemStartToEnd(currentIndex, direction, carouselItems)
-    const isStart = moveItemEndToStart(currentIndex, direction, carouselItems)
-
-    const carouselItemsActive = document.querySelectorAll('.carousel-inner .carousel-item.active');
-    const centerIndexCarouselItemsActive = 1
-    const currentIndexToLeave = centerIndexCarouselItemsActive - direction
-    const leaveCurrentItem = carouselItemsActive[currentIndexToLeave]
+const moveLeftCaroucel = function(){
+    const carouselItems = loadItemsOfCarousel()
+    const currentIndexToLeave = currentIndex - 1
+    const leaveCurrentItem = carouselItems[currentIndexToLeave]
     fadeOut(leaveCurrentItem)
 
-
-    for (const item of carouselItems) {
-        console.log(item)
-    }
-
-    let currentIndexToAdd = currentIndex
-    if (isEnd) {
-        currentIndexToAdd += 2
-
-    } else if (isStart) {
-
-        currentIndexToAdd = 0
-
-    } else {
-        currentIndexToAdd += 2 * direction
-        currentIndex += direction
-    }
-    console.log(direction, currentIndex, currentIndexToAdd)
-    const appearCurrentItem = carouselItems[currentIndexToAdd]
-    console.log = appearCurrentItem
+    const currentIndexToappear = currentIndex + 2
+    const appearCurrentItem = carouselItems[currentIndexToappear]
     fadeIn(appearCurrentItem)
 
+}
+const moveRightCaroucel = function(){
+    const carouselItems = loadItemsOfCarousel()
+    const currentIndexToLeave = currentIndex + 1
+    const leaveCurrentItem = carouselItems[currentIndexToLeave]
+    fadeOut(leaveCurrentItem)
 
+    const currentIndexToappear = currentIndex - 2
+    const appearCurrentItem = carouselItems[currentIndexToappear]
+    fadeIn(appearCurrentItem)
+
+}
+
+const moveCarousel = function (direction) {
+    
+
+    if (direction > 0) {
+        moveLeftCaroucel()
+        moveItemStartToEnd()
+        
+    } else {
+        moveRightCaroucel()
+        moveItemEndToStart()
+    }
+    
 
 }
 
