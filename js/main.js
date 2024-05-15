@@ -221,6 +221,7 @@ window.onload = function () {
     loadBibliotecaImgenes()
     loadEventScroll()
     loadEventCarousel()
+    //hola
     apiManga()
     debugLoad()
 }
