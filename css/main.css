@@ -1,6 +1,6 @@
 /* Variables y estilos globales */
 :root {
-    --time-duration: 5s;
+    --time-duration: 1s;
     --barn-red: hsla(0, 100%, 24%, 1);
     --fire-brick: hsla(356, 83%, 41%, 1);
     --papaya-whip: hsla(40, 91%, 91%, 1);

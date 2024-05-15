@@ -17,7 +17,7 @@ const enabledControlCaousel = function () {
 const startCarousel = function () {
     const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item');
     carouselItems[currentIndex - 1].classList.add('active')
-    carouselItems[currentIndex ].classList.add('active')
+    carouselItems[currentIndex].classList.add('active')
     carouselItems[currentIndex + 1].classList.add('active')
 }
 
@@ -37,8 +37,8 @@ const moveItemEndToStart = function () {
     const lastItem = carouselItems[lastItemIndex]
     const lastClone = lastItem.cloneNode(true)
     lastClone.classList.remove('active')
-    const firstItem = carouselItems[0];
-    firstItem.parentNode.insertBefore(lastClone, firstItem);
+    const firstItem = carouselItems[0]
+    firstItem.parentNode.insertBefore(lastClone, firstItem)
     lastItem.remove()
 }
 
@@ -61,18 +61,18 @@ const loadItemsOfCarousel = function () {
     return document.querySelectorAll('.carousel-inner .carousel-item')
 }
 
-const moveLeftCaroucel = function(){
+const moveLeftCaroucel = function () {
     const carouselItems = loadItemsOfCarousel()
     const currentIndexToLeave = currentIndex - 1
     const leaveCurrentItem = carouselItems[currentIndexToLeave]
     fadeOut(leaveCurrentItem)
 
-    const currentIndexToappear = currentIndex + 2
-    const appearCurrentItem = carouselItems[currentIndexToappear]
+    const currentIndexToAppear = currentIndex + 2
+    const appearCurrentItem = carouselItems[currentIndexToAppear]
     fadeIn(appearCurrentItem)
 
 }
-const moveRightCaroucel = function(){
+const moveRightCaroucel = function () {
     const carouselItems = loadItemsOfCarousel()
     const currentIndexToLeave = currentIndex + 1
     const leaveCurrentItem = carouselItems[currentIndexToLeave]
@@ -85,17 +85,17 @@ const moveRightCaroucel = function(){
 }
 
 const moveCarousel = function (direction) {
-    
+
 
     if (direction > 0) {
         moveLeftCaroucel()
         moveItemStartToEnd()
-        
+
     } else {
         moveRightCaroucel()
         moveItemEndToStart()
     }
-    
+
 
 }
 
@@ -187,6 +187,33 @@ const loadEventCarousel = function () {
         });
 }
 
+const apiManga = function () {
+    const options = {
+        method: 'GET',
+        url: 'https://mangaverse-api.p.rapidapi.com/manga/image',
+        params: {
+            id: '659524e9597f3b00281f070d'
+        },
+        headers: {
+            'X-RapidAPI-Key': 'e96dd4fc0fmsh45983479f88aa72p1d0a83jsnc1e9e7a7c58e',
+            'X-RapidAPI-Host': 'mangaverse-api.p.rapidapi.com'
+        }
+    };
+
+    fetch(`${options.url}?id=${options.params.id}`, {
+        method: options.method,
+        headers: options.headers
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+
+}
+
 
 window.onload = function () {
 
@@ -194,5 +221,6 @@ window.onload = function () {
     loadBibliotecaImgenes()
     loadEventScroll()
     loadEventCarousel()
+    apiManga()
     debugLoad()
 }
