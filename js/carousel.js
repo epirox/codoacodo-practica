@@ -43,7 +43,6 @@ const moveItemStartToEnd = function () {
     const carouselItems = loadItemsOfCarousel()
     const firstItem = carouselItems[0]
     const firstClone = firstItem.cloneNode(true)
-    firstClone.classList.remove('active')
     carouselInner.appendChild(firstClone)
     firstItem.remove()
 
@@ -54,31 +53,36 @@ const moveItemEndToStart = function () {
     const lastItemIndex = carouselItems.length - 1
     const lastItem = carouselItems[lastItemIndex]
     const lastClone = lastItem.cloneNode(true)
-    lastClone.classList.remove('active')
     const firstItem = carouselItems[0]
     firstItem.parentNode.insertBefore(lastClone, firstItem)
     lastItem.remove()
 }
 
-const fadeIn = function(item) {
+const fadeIn = function (item) {
     return new Promise((resolve) => {
         item.classList.add('active');
         item.classList.add('fadeIn');
         const handler = () => {
-            item.classList.remove('fadeIn');
+            if (item.classList.contains('fadeIn')) {
+                item.classList.remove('fadeIn');
+            }
             item.removeEventListener('animationend', handler);
-            return true;
+            resolve(true);
         };
-        resolve(true);
+        item.addEventListener('animationend', handler);
     });
 };
 
-const fadeOut = function(item) {
+const fadeOut = function (item) {
     return new Promise((resolve) => {
         item.classList.add('fadeOut');
         const handler = () => {
-            item.classList.remove('fadeOut');
-            item.classList.remove('active');
+            if (item.classList.contains('active')) {
+                item.classList.remove('active');
+            }
+            if (item.classList.contains('fadeOut')) {
+                item.classList.remove('fadeOut');
+            }
             item.removeEventListener('animationend', handler);
             resolve(true);
         };
@@ -92,15 +96,18 @@ const loadItemsOfCarousel = function () {
 }
 
 const moveCaroucel = async function (direction) {
-    disabledControlCaousel();
 
     const carouselItems = loadItemsOfCarousel();
     const currentIndexToLeave = currentIndex - direction;
     const leaveCurrentItem = carouselItems[currentIndexToLeave];
-    const finishOut = fadeOut(leaveCurrentItem);
 
-    const currentIndexToappear = currentIndex + 2*direction;
+
+    const currentIndexToappear = currentIndex + 2 * direction;
     const appearCurrentItem = carouselItems[currentIndexToappear];
+
+    disabledControlCaousel();
+
+    const finishOut = fadeOut(leaveCurrentItem);
     const finishIn = fadeIn(appearCurrentItem);
 
     await Promise.all([finishOut, finishIn]);
@@ -110,11 +117,10 @@ const moveCaroucel = async function (direction) {
 
 
 const actionCarousel = function (direction) {
+    moveCaroucel(direction);
     if (direction > 0) {
-        moveCaroucel(direction);
         moveItemStartToEnd();
     } else {
-        moveCaroucel(direction);
         moveItemEndToStart();
     }
 }
