@@ -261,8 +261,8 @@ nav .container .menu-toggle .bar {
     left: 0;
     z-index: -1;
     height: 100%;
-    aspect-ratio: 16 / 9; 
-    object-fit: cover; 
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .carousel-control-prev,
@@ -467,6 +467,12 @@ section {
     width: auto;
     height: 100%;
     object-fit: contain;
+}
+
+.howTo {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    opacity: 1;
 }
 
 form {
