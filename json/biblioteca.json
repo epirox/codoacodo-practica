@@ -1,201 +1,200 @@
 {
     "0": {
         "src": "src/bannerArt/anime_art_of_Banner_page_manga(0).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "El Héroe del Amanecer",
+        "description": "Un joven guerrero lucha contra las fuerzas del mal en un mundo donde la magia y la tecnología coexisten.",
         "gen": "Shounen"
     },
     "1": {
         "src": "src/bannerArt/anime_art_of_Banner_page_manga(1).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "El Reino Perdido",
+        "description": "Una princesa exiliada intenta recuperar su trono perdido con la ayuda de un grupo de rebeldes.",
         "gen": "Shounen"
-
     },
     "2": {
         "src": "src/bannerArt/anime_art_of_Banner_page_manga(2).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "La Espada Mística",
+        "description": "Un chico descubre una espada mágica que le otorga poderes extraordinarios, cambiando su vida para siempre.",
         "gen": "Shounen"
     },
     "3": {
         "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(0).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Estrellas de Cristal",
+        "description": "Una chica común descubre que tiene el poder de controlar los cristales y debe salvar su mundo de la oscuridad.",
         "gen": "Shoujo"
     },
     "4": {
         "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(1).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Jardines Encantados",
+        "description": "En un jardín mágico, una joven jardinera encuentra el amor y la aventura mientras protege su hogar.",
         "gen": "Shoujo"
     },
     "5": {
         "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(2).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Melodías del Corazón",
+        "description": "Una talentosa música lucha por encontrar su propia voz en un mundo lleno de desafíos y romance.",
         "gen": "Shoujo"
     },
     "6": {
         "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(3).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Sombras en la Luna",
+        "description": "Una joven con habilidades sobrenaturales debe enfrentar su destino y salvar a su ciudad de una amenaza oculta.",
         "gen": "Shoujo"
     },
     "7": {
         "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(4).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Cuentos de Sirenas",
+        "description": "Una sirena aventurera explora el mundo humano mientras busca la verdad sobre su origen.",
         "gen": "Shoujo"
     },
     "8": {
         "src": "src/bannerWarriors/anime_art_of_banner_warriors_s(5).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Hechizos y Encantos",
+        "description": "Una aprendiz de hechicera navega por un mundo de magia y misterio mientras descubre su verdadero poder.",
         "gen": "Shoujo"
     },
     "9": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(0).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Neón en el Abismo",
+        "description": "En un futuro distópico, un detective cibernético desentraña una conspiración que podría cambiar el destino de la humanidad.",
         "gen": "Seinen"
     },
     "10": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(1).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Exploradores del Tiempo",
+        "description": "Un equipo de científicos viaja a través del tiempo para evitar una catástrofe global, enfrentando peligros en cada época.",
         "gen": "Seinen"
     },
     "11": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(2).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Cazadores de Sombras",
+        "description": "Un grupo de élite combate criaturas de la oscuridad en una ciudad perpetuamente envuelta en la noche.",
         "gen": "Seinen"
     },
     "12": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(3).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Fragmentos del Pasado",
+        "description": "Un arqueólogo descubre artefactos que desvelan secretos antiguos, conectados con un peligro actual.",
         "gen": "Seinen"
     },
     "13": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(4).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Renegados del Espacio",
+        "description": "Una banda de rebeldes lucha contra un imperio galáctico opresivo mientras buscan libertad y justicia.",
         "gen": "Seinen"
     },
     "14": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(5).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Guardianes del Nexo",
+        "description": "En un universo paralelo, héroes de diferentes mundos se unen para proteger la realidad del caos.",
         "gen": "Seinen"
     },
     "15": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(6).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Ecos de Guerra",
+        "description": "En un mundo devastado por la guerra, un soldado busca redención mientras enfrenta los fantasmas de su pasado.",
         "gen": "Seinen"
     },
     "16": {
         "src": "src/neonExplorerFruits/manga_neon_explorer_fruit_art_(7).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "El Último Viaje",
+        "description": "Un capitán espacial lidera una misión suicida para salvar su planeta de la aniquilación inminente.",
         "gen": "Seinen"
     },
     "17": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(0).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Rosas y Cuchillos",
+        "description": "En un mundo de alta sociedad y secretos oscuros, una mujer lucha por su independencia y verdad.",
         "gen": "Seinen"
     },
     "18": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(1).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Susurros de la Noche",
+        "description": "Una periodista se ve envuelta en un misterio sobrenatural mientras investiga casos inexplicables en su ciudad.",
         "gen": "Josei"
     },
     "19": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(2).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Sombras del Amor",
+        "description": "Una mujer debe enfrentar su pasado y redescubrir el amor mientras lidia con los desafíos de su presente.",
         "gen": "Josei"
     },
     "20": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(3).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Corazones en Llamas",
+        "description": "Un romance ardiente entre una bombera y un investigador de incendios mientras desentrañan una serie de misterios.",
         "gen": "Josei"
     },
     "21": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(4).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Caminos Cruzados",
+        "description": "Historias entrelazadas de diferentes mujeres que se encuentran en la encrucijada de sus vidas.",
         "gen": "Josei"
     },
     "22": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(5).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Notas de una Vida",
+        "description": "Una compositora se redescubre a través de la música mientras navega por las complejidades del amor y la pérdida.",
         "gen": "Josei"
     },
     "23": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(6).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Sombras de la Verdad",
+        "description": "Una abogada lucha por la justicia mientras descubre secretos oscuros que ponen en peligro su vida.",
         "gen": "Josei"
     },
     "24": {
         "src": "src/painterlyAnimaitedArtworck/painterly_anime_artwork_manga_(7).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Ecos del Ayer",
+        "description": "Un thriller psicológico donde una detective debe enfrentar su pasado para resolver un caso complejo.",
         "gen": "Josei"
     },
     "25": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(0).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Reencarnado en el Futuro",
+        "description": "Un joven muere y renace en un futuro distante, donde debe adaptarse y descubrir su propósito en un mundo nuevo.",
         "gen": "Isekai"
     },
     "26": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(1).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "El Héroe Desconocido",
+        "description": "Transportado a un mundo alternativo, un joven se convierte en el héroe inesperado que debe salvar a sus nuevos amigos.",
         "gen": "Isekai"
     },
     "27": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(2).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Reinos de Ensueño",
+        "description": "Un jugador de videojuegos es transportado a su juego favorito y debe usar su conocimiento para sobrevivir.",
         "gen": "Isekai"
     },
     "28": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(3).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Caminos de Fantasía",
+        "description": "Un grupo de amigos es transportado a un mundo de fantasía, donde deben aprender a vivir y luchar juntos.",
         "gen": "Isekai"
     },
     "29": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(4).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "La Última Batalla",
+        "description": "Un soldado es enviado a un mundo paralelo para luchar en una guerra épica que decidirá el destino de ambos mundos.",
         "gen": "Isekai"
     },
     "30": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(5).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Puertas del Destino",
+        "description": "Una joven descubre un portal a otro mundo y debe enfrentarse a desafíos y enemigos para encontrar su camino de regreso.",
         "gen": "Isekai"
     },
     "31": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(6).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "El Arte del Renacer",
+        "description": "Un artista renace en un mundo donde sus habilidades creativas se convierten en poderes mágicos.",
         "gen": "Isekai"
     },
     "32": {
         "src": "src/topToFuture/manga_Top_future_art_by_atey_g(7).jpeg",
-        "title": "Lorem ipsum dolor sit amet, consectetur",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo, dui at dapibus auctor, ex erat consectetur odio, a facilisis est quam et erat.",
+        "title": "Mundos Cruzados",
+        "description": "Dos hermanos son transportados a un mundo mágico y deben trabajar juntos para encontrar el camino a casa.",
         "gen": "Isekai"
     }
 }
