@@ -191,33 +191,39 @@
     </section>
     <section id="contacto" class="bungee-regular">
       <h2>Contacto</h2>
-      <form action="#contacto" class="contact-form superborde">
+      <form action="index.html" class="contact-form superborde" id="contact-form"
+      method="post" enctype="multipart/form-data">
 
         <div class="form-group">
           <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" class="form-control" required>
+          <input type="text" name="nombre" id="nombre" class="form-control">
+          <span class="error-message" id="error-nombre">El campo es requerido</span>
         </div>
 
         <div class="form-group">
           <label for="tema">Tema</label>
-          <input type="text" name="tema" id="tema" class="form-control" required>
+          <input type="text" name="tema" id="tema" class="form-control">
+          <span class="error-message" id="error-tema">El campo es requerido</span>
         </div>
 
         <div class="form-group">
           <label for="consulta">Consulta</label>
-          <textarea name="consulta" id="consulta" class="form-control" rows="5" required></textarea>
+          <textarea name="consulta" id="consulta" class="form-control" rows="5"></textarea>
+          <span class="error-message" id="error-consulta">El campo es requerido</span>
         </div>
 
         <div class="form-group">
           <div class="form-check">
-            <input type="checkbox" name="tyc" id="tyc" class="form-check-input" required>
+            <input type="checkbox" name="tyc" id="tyc" class="form-check-input">
             <label for="tyc" class="form-check-label">Acepta los términos y condiciones</label>
+            <span class="error-message" id="error-tyc">El campo es requerido</span>
           </div>
         </div>
 
         <div class="form-group">
           <label for="adjunto">Adjuntar</label>
           <input type="file" name="adjunto" id="adjunto" class="form-control">
+          <span class="error-message" id="error-adjunto">El campo es requerido</span>
         </div>
 
         <button type="submit" class="btn-submit">Enviar</button>

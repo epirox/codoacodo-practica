@@ -535,6 +535,19 @@ textarea.form-control {
     background-color: #0056b3;
 }
 
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    display: none; /* Oculto por defecto */
+}
+
 /* Media Queries */
 @media (min-width: 576px) {
     .contact-form {

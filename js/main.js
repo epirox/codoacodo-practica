@@ -1,5 +1,6 @@
 import { loadEventCarousel } from './carousel.js';
 import { loadLibraryImges } from './library.js';
+import { loadEventContactSubmit } from './contactForm.js';
 
 
 const debugLoad = function () {
@@ -47,7 +48,7 @@ window.onload = function () {
     loadEventMenuToggle()
     loadEventCarousel()    
     loadLibraryImges()
-    
+    loadEventContactSubmit()
     
     //hola
     apiManga()
