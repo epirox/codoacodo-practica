@@ -24,7 +24,8 @@ const loadEventScroll = function () {
 }
 
 export const loadLibraryImges = function () {
-    const url = 'json/biblioteca.json';
+    //const url = 'json/biblioteca.json'
+    const url = 'https://mangapoject.onrender.com/mangas/'
 
     const LibraryContainer = document.getElementById('biblioteca');
 
