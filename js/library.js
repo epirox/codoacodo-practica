@@ -42,7 +42,7 @@ export const loadLibraryImges = function () {
                         contenedor.classList.add('item');
 
                         const imagen = document.createElement('img');
-                        imagen.src = foto.src;
+                        imagen.src = url+foto.src;
                         imagen.alt = foto.title;
                         imagen.classList.add('imagen');
 
